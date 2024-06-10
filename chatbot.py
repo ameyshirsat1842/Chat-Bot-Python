@@ -3,20 +3,26 @@ import random
 
 print("#### ChatBot by Amey ####")
 
+
 def greet_name(name):
     return "Hello " + name + ", how are you!?"
+
 
 name = input("What's your name? ")
 print(greet_name(name))
 
+
 def greet_age(age):
     return "Okay you are " + str(age) + " years old"
+
 
 age = input("How old are you? ")
 print(greet_age(age))
 
+
 def bye(name):
     return "Bye " + name + ", Have a great day! "
+
 
 def func_joke():
     jokes = [
@@ -29,6 +35,7 @@ def func_joke():
         "What do you call a hippie’s wife? Mississippi."
     ]
     return random.choice(jokes)
+
 
 def get_weather(city, api_key):
     base_url = "http://api.openweathermap.org/data/2.5/weather"
@@ -46,7 +53,9 @@ def get_weather(city, api_key):
     else:
         return "Sorry, I couldn't fetch the weather for you."
 
+
 api_key = '5667d6b863b2e1ad42bf8bb8df708846'
+
 
 def func_calculator(x, y, operator):
     if operator.lower() == 'add':
@@ -60,15 +69,18 @@ def func_calculator(x, y, operator):
             return "Cannot divide by 0!"
         else:
             return x / y
+
+
 def func_quotes():
     quotes = [
-           "The only way to do great work is to love what you do. – Steve Jobs",
-           "The best time to plant a tree was 20 years ago. The second best time is now.",
-           "It’s hard to beat a person who never gives up. – Babe Ruth",
-           "I am not a product of my circumstances. I am a product of my decisions. – Stephen Covey",
-           "Don’t watch the clock; do what it does. Keep going."
+        "The only way to do great work is to love what you do. – Steve Jobs",
+        "The best time to plant a tree was 20 years ago. The second best time is now.",
+        "It’s hard to beat a person who never gives up. – Babe Ruth",
+        "I am not a product of my circumstances. I am a product of my decisions. – Stephen Covey",
+        "Don’t watch the clock; do what it does. Keep going."
     ]
     return random.choice(quotes)
+
 
 while True:
     choice = input("Do you want to continue with our App?\nPress Yes/No: ").lower()
